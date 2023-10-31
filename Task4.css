@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('calculator.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+.container
+{
+    margin-top: 10%;
+    color: blue;
+}
+.calculator {
+    background-color: lightgrey;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.screen {
+    text-align: right;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    background-color:lightcyan;
+}
+#result {
+    font-size: 18px;
+    color: blue;
+    margin: 0;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+input[type="date"] {
+    width: 80%;
+    margin: 5px 0;
+    margin:10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Media queries for mobile phones */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 20%; /* Adjust the margin for better mobile layout */
+    }
+
+    .calculator {
+        width: 80%; /* Make the calculator slightly smaller on mobile */
+        height: 150px; /* Adjust the height for mobile screens */
+    }
+
+    .screen {
+        font-size: 14px; /* Adjust the font size for mobile */
+    }
+
+    input[type="date"] {
+        width: 90%; /* Make the date input wider on mobile screens */
+    }
+}
